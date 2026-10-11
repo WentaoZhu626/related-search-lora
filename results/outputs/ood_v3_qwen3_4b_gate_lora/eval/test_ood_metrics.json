@@ -1,0 +1,178 @@
+{
+  "data": {
+    "samples": 1920,
+    "positive_rate": 0.7755208333333333,
+    "mean_query_chars": 4.452083333333333,
+    "gold_term_seen_rate": 0.22402287893231648,
+    "predicted_term_seen_rate": 0.13144732728977807,
+    "clusters": [
+      5,
+      19,
+      29,
+      34
+    ]
+  },
+  "gate": {
+    "threshold": 0.8555309772491455,
+    "accuracy": 0.7963541666666667,
+    "precision": 0.9295774647887324,
+    "recall": 0.7978509066487576,
+    "specificity": 0.7911832946635731,
+    "balanced_accuracy": 0.7945171006561653,
+    "f1": 0.8586917238886882,
+    "tp": 1188,
+    "fp": 90,
+    "tn": 341,
+    "fn": 301,
+    "roc_auc": 0.8660914767069882,
+    "average_precision": 0.9538152520536615,
+    "at_threshold_0.5": {
+      "threshold": 0.5,
+      "accuracy": 0.8197916666666667,
+      "precision": 0.8977035490605428,
+      "recall": 0.8663532572196104,
+      "specificity": 0.6589327146171694,
+      "balanced_accuracy": 0.7626429859183899,
+      "f1": 0.8817498291182501,
+      "tp": 1290,
+      "fp": 147,
+      "tn": 284,
+      "fn": 199
+    },
+    "calibration": {
+      "brier_score": 0.14299619034310648,
+      "expected_calibration_error": 0.11975501937899169,
+      "bins": [
+        {
+          "low": 0.0,
+          "high": 0.1,
+          "samples": 306,
+          "mean_probability": 0.02136868221704883,
+          "positive_rate": 0.30718954248366015
+        },
+        {
+          "low": 0.1,
+          "high": 0.2,
+          "samples": 59,
+          "mean_probability": 0.14041274419780506,
+          "positive_rate": 0.576271186440678
+        },
+        {
+          "low": 0.2,
+          "high": 0.3,
+          "samples": 36,
+          "mean_probability": 0.24725465186768109,
+          "positive_rate": 0.6666666666666666
+        },
+        {
+          "low": 0.3,
+          "high": 0.4,
+          "samples": 42,
+          "mean_probability": 0.34018935405072714,
+          "positive_rate": 0.5
+        },
+        {
+          "low": 0.4,
+          "high": 0.5,
+          "samples": 40,
+          "mean_probability": 0.4426628641784191,
+          "positive_rate": 0.65
+        },
+        {
+          "low": 0.5,
+          "high": 0.6,
+          "samples": 23,
+          "mean_probability": 0.5542466407236846,
+          "positive_rate": 0.6086956521739131
+        },
+        {
+          "low": 0.6,
+          "high": 0.7,
+          "samples": 37,
+          "mean_probability": 0.6559139071284114,
+          "positive_rate": 0.5675675675675675
+        },
+        {
+          "low": 0.7,
+          "high": 0.8,
+          "samples": 50,
+          "mean_probability": 0.7568472230434418,
+          "positive_rate": 0.66
+        },
+        {
+          "low": 0.8,
+          "high": 0.9,
+          "samples": 100,
+          "mean_probability": 0.8528080815076828,
+          "positive_rate": 0.71
+        },
+        {
+          "low": 0.9,
+          "high": 1.0,
+          "samples": 1227,
+          "mean_probability": 0.9894084186211969,
+          "positive_rate": 0.9380603096984516
+        }
+      ]
+    },
+    "positive_rate_predicted": 0.665625
+  },
+  "forced_generation": {
+    "samples": 1489,
+    "exact_set_match": 0.0,
+    "micro_precision": 0.09252891528602689,
+    "micro_recall": 0.09405783285668891,
+    "micro_f1": 0.09328710999054521,
+    "average_prediction_count": 4.296843519140363,
+    "average_truth_count": 4.226997985224983,
+    "health": {
+      "samples": 1489,
+      "predicted_terms": 6398,
+      "empty_output_rate": 0.0,
+      "repeated_raw_output_rate": 0.035594358629952985,
+      "malformed_term_rate": 0.002188183807439825,
+      "query_copy_rate": 0.004029550033579583,
+      "average_unique_term_count": 4.296843519140363
+    },
+    "soft_f1": 0.7403532128065021
+  },
+  "generation_when_shown": {
+    "samples": 1188,
+    "exact_set_match": 0.0,
+    "micro_precision": 0.09784283513097072,
+    "micro_recall": 0.09986239433850992,
+    "micro_f1": 0.09884229983461425,
+    "average_prediction_count": 4.37037037037037,
+    "average_truth_count": 4.281986531986532,
+    "soft_f1": 0.7479853825478749
+  },
+  "end_to_end": {
+    "samples": 1920,
+    "exact_set_match": 0.17760416666666667,
+    "micro_precision": 0.09082782048989808,
+    "micro_recall": 0.08071178900540198,
+    "micro_f1": 0.08547152351308152,
+    "average_prediction_count": 2.9130208333333334,
+    "average_truth_count": 3.278125
+  },
+  "generated_rows": 1579,
+  "bootstrap_95ci": {
+    "gate_roc_auc": {
+      "low": 0.8480167976106951,
+      "high": 0.885181855934768
+    },
+    "gate_balanced_accuracy": {
+      "low": 0.771862714987715,
+      "high": 0.8156975035030228
+    },
+    "repeats": 1000,
+    "forced_generation_micro_f1": {
+      "low": 0.08575733318925313,
+      "high": 0.1006178748906419
+    },
+    "forced_generation_soft_f1": {
+      "low": 0.7354654575385773,
+      "high": 0.7453443314912025
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "seed": 20260921,
+  "input": "/root/autodl-tmp/related_research/data/cleaned_dataset.csv",
+  "read_stats": {
+    "raw_rows": 19847,
+    "empty_query": 0,
+    "duplicate_query": 0,
+    "term_columns": [
+      "相关搜索词1",
+      "相关搜索词2",
+      "相关搜索词3",
+      "相关搜索词4",
+      "相关搜索词5",
+      "相关搜索词6",
+      "相关搜索词7",
+      "相关搜索词8",
+      "相关搜索词9",
+      "相关搜索词10",
+      "相关搜索词11"
+    ]
+  },
+  "embedding_model": "/root/autodl-tmp/related_research/models/Qwen3-Embedding-0.6B",
+  "clusters": 40,
+  "ood_cluster_ids": [
+    34,
+    19,
+    29,
+    5
+  ],
+  "ood_selection": "auto(isolation)",
+  "buffer": {
+    "fraction": 0.03,
+    "count": 538,
+    "similarity_cutoff": 0.777678370475769
+  },
+  "overall": {
+    "samples": 19847,
+    "positive": 15136,
+    "negative": 4711,
+    "positive_rate": 0.762634151257117,
+    "mean_query_length": 4.549503703330478,
+    "related_count_distribution": {
+      "0": 4711,
+      "1": 126,
+      "2": 359,
+      "3": 3390,
+      "4": 6573,
+      "5": 3256,
+      "6": 1155,
+      "7": 277
+    }
+  },
+  "splits": {
+    "train": {
+      "samples": 15889,
+      "positive": 12056,
+      "negative": 3833,
+      "positive_rate": 0.7587639247277991,
+      "mean_query_length": 4.564730316571213,
+      "related_count_distribution": {
+        "0": 3833,
+        "1": 98,
+        "2": 293,
+        "3": 2767,
+        "4": 5291,
+        "5": 2544,
+        "6": 867,
+        "7": 196
+      }
+    },
+    "validation": {
+      "samples": 500,
+      "positive": 379,
+      "negative": 121,
+      "positive_rate": 0.758,
+      "mean_query_length": 4.682,
+      "related_count_distribution": {
+        "0": 121,
+        "1": 2,
+        "2": 6,
+        "3": 87,
+        "4": 163,
+        "5": 90,
+        "6": 26,
+        "7": 5
+      },
+      "nearest_train_similarity": {
+        "p5": 0.6325979828834534,
+        "p25": 0.7020818591117859,
+        "p50": 0.7561342120170593,
+        "p75": 0.8023324608802795,
+        "p95": 0.878546416759491,
+        "mean": 0.7553361654281616
+      },
+      "gold_term_seen_in_train_rate": 0.2684948979591837
+    },
+    "test_id": {
+      "samples": 1000,
+      "positive": 759,
+      "negative": 241,
+      "positive_rate": 0.759,
+      "mean_query_length": 4.559,
+      "related_count_distribution": {
+        "0": 241,
+        "1": 8,
+        "2": 19,
+        "3": 163,
+        "4": 337,
+        "5": 152,
+        "6": 63,
+        "7": 17
+      },
+      "nearest_train_similarity": {
+        "p5": 0.6419145464897156,
+        "p25": 0.7113629579544067,
+        "p50": 0.7589251399040222,
+        "p75": 0.8067150115966797,
+        "p95": 0.8725448250770569,
+        "mean": 0.7577254772186279
+      },
+      "gold_term_seen_in_train_rate": 0.29012738853503184
+    },
+    "test_ood": {
+      "samples": 1920,
+      "positive": 1489,
+      "negative": 431,
+      "positive_rate": 0.7755208333333333,
+      "mean_query_length": 4.452083333333333,
+      "related_count_distribution": {
+        "0": 431,
+        "1": 13,
+        "2": 28,
+        "3": 302,
+        "4": 620,
+        "5": 356,
+        "6": 131,
+        "7": 39
+      },
+      "nearest_train_similarity": {
+        "p5": 0.6002997756004333,
+        "p25": 0.6688669323921204,
+        "p50": 0.7079880237579346,
+        "p75": 0.740619421005249,
+        "p95": 0.7681077718734741,
+        "mean": 0.6995213627815247
+      },
+      "gold_term_seen_in_train_rate": 0.22402287893231648
+    },
+    "buffer": {
+      "samples": 538,
+      "positive": 453,
+      "negative": 85,
+      "positive_rate": 0.8420074349442379,
+      "mean_query_length": 4.306691449814126,
+      "related_count_distribution": {
+        "0": 85,
+        "1": 5,
+        "2": 13,
+        "3": 71,
+        "4": 162,
+        "5": 114,
+        "6": 68,
+        "7": 20
+      },
+      "nearest_train_similarity": {
+        "p5": 0.6961303949356079,
+        "p25": 0.746722936630249,
+        "p50": 0.7838895916938782,
+        "p75": 0.8197053074836731,
+        "p95": 0.8813025951385498,
+        "mean": 0.7840394377708435
+      },
+      "gold_term_seen_in_train_rate": 0.3398009950248756
+    }
+  },
+  "note": "nearest_train_similarity 越低说明越“远离”训练集；test_ood 应明显低于 test_id/validation。gold_term_seen_in_train_rate 是测试集标准答案词在训练集答案里出现过的比例。"
+}

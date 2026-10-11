@@ -1,0 +1,25 @@
+{
+  "hidden_size": 2560,
+  "gate_head_dropout": 0.1,
+  "threshold": 0.85,
+  "threshold_metric": "balanced_accuracy",
+  "threshold_selected_on": "validation (in-distribution)",
+  "validation_metrics": {
+    "threshold": 0.9655759334564209,
+    "accuracy": 0.798,
+    "precision": 0.9695945945945946,
+    "recall": 0.7572559366754618,
+    "specificity": 0.9256198347107438,
+    "balanced_accuracy": 0.8414378856931028,
+    "f1": 0.8503703703703704,
+    "tp": 287,
+    "fp": 9,
+    "tn": 112,
+    "fn": 92
+  },
+  "gate_loss_weight": 1.0,
+  "generation_loss_weight": 1.0,
+  "prompt_version": "rs-prompt-v3-2026-09-21",
+  "threshold_auto_selected": 0.9655759334564209,
+  "threshold_note": "手动从自动选择的 0.9656 调低到 0.85，觉得太保守"
+}

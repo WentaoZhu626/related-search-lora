@@ -1,0 +1,14 @@
+# AutoDL 镜像（PyTorch 2.5.1 / Python 3.12 / CUDA 12.4）已自带 torch，不需要重装。
+# 只需要补下面这些：
+transformers>=4.56,<5
+peft>=0.14
+accelerate>=1.0
+numpy
+tensorboard          # 可选，装了才会写 TensorBoard 日志
+scikit-learn         # 可选，仅 --embedding-model tfidf 的调试兜底会用到
+gradio               # 可选，只有 demo_app.py（网页体验，给 mentor 用）需要
+
+# 注意：torch<2.6 时 transformers 会拒绝加载 .bin 权重，只能用 safetensors。
+# Qwen3-4B-Instruct-2507 和 Qwen3-Embedding-0.6B 都提供 safetensors，可以直接用。
+
+matplotlib

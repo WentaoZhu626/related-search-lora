@@ -1,0 +1,23 @@
+{
+  "hidden_size": 2560,
+  "gate_head_dropout": 0.1,
+  "threshold": 0.8555309772491455,
+  "threshold_metric": "balanced_accuracy",
+  "threshold_selected_on": "validation (in-distribution)",
+  "validation_metrics": {
+    "threshold": 0.8555309772491455,
+    "accuracy": 0.836,
+    "precision": 0.9459459459459459,
+    "recall": 0.8311345646437994,
+    "specificity": 0.8512396694214877,
+    "balanced_accuracy": 0.8411871170326435,
+    "f1": 0.8848314606741572,
+    "tp": 315,
+    "fp": 18,
+    "tn": 103,
+    "fn": 64
+  },
+  "gate_loss_weight": 1.0,
+  "generation_loss_weight": 1.0,
+  "prompt_version": "rs-prompt-v3-2026-09-21"
+}
